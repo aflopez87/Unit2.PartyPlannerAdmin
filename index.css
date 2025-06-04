@@ -1,55 +1,71 @@
-body {
-  margin: 0;
-  padding: 0 1rem;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid lightgrey;
+    padding: 10px; 
+    margin: 10px;
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
+    
+}
+h1, h2 {
+    padding: 20px 10px;
+}
+
+h3 {
+    padding: 10px;
+}
+
+section {
+    width: 50%;
 }
 
 main {
-  display: grid;
-  gap: 1rem;
+    display: flex;
 }
 
-@media (width >= 600px) {
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
+.party p {
+    padding: 0 10px;
 }
 
-.parties {
-  display: grid;
-  gap: 1ch;
-  padding-left: 0;
-  list-style-type: none;
+#party-date {
+    padding-top: 10px;
 }
 
-.parties a {
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  padding: 1ch;
-  text-decoration: none;
-  color: black;
+#party-location {
+    padding-bottom: 10px;
 }
 
-.parties a:hover {
-  background: #eee;
-  font-style: italic;
-}
-
-.parties li.selected {
-  font-weight: bold;
-  font-style: italic;
+.highlighted {
+    font-style: italic;
+    font-weight: bold;
+    background-color: aqua;
 }
 
 form {
-  display: grid;
-  gap: 1ch;
-  padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
 
-label {
-  display: grid;
+#delete {
+    padding: 5px 20px;
+    margin: 10px;
+
 }
+
+
+form input{
+    margin-bottom: 5px;
+}
+
+form input:last-of-type{
+    margin-top: 10px;
+}
+
